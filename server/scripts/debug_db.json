@@ -1,0 +1,245 @@
+{
+  "users": [
+    {
+      "id": "7ff8a244-8dde-41bf-beee-4e665565e0e2",
+      "email": "admin@security.com",
+      "password": "$2a$10$7tZfsUd/ZAAE1LNWOkN2d.ejJ7rIGNkg9sM4Sx6qY7b1zj56Pga1K",
+      "name": "System Admin",
+      "phone": "+1234567890",
+      "role": "admin",
+      "createdAt": "2026-05-31T21:56:25.619Z"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "cam-001",
+      "name": "Front Door",
+      "location": "Main Entrance",
+      "url": "rtsp://localhost:8554/cam-001",
+      "status": "online",
+      "resolution": "1280x720",
+      "fps": 15,
+      "detectionEnabled": true,
+      "sensitivity": "medium",
+      "zones": [
+        {
+          "id": "z1",
+          "name": "Entry Zone",
+          "coordinates": [
+            [
+              0,
+              0
+            ],
+            [
+              0.3,
+              0
+            ],
+            [
+              0.3,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "type": "critical"
+        },
+        {
+          "id": "z2",
+          "name": "Walkway",
+          "coordinates": [
+            [
+              0.3,
+              0
+            ],
+            [
+              0.7,
+              0
+            ],
+            [
+              0.7,
+              1
+            ],
+            [
+              0.3,
+              1
+            ]
+          ],
+          "type": "warning"
+        },
+        {
+          "id": "z3",
+          "name": "Perimeter",
+          "coordinates": [
+            [
+              0.7,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0.7,
+              1
+            ]
+          ],
+          "type": "normal"
+        }
+      ],
+      "ownerId": "7ff8a244-8dde-41bf-beee-4e665565e0e2",
+      "createdAt": "2026-05-31T21:56:25.620Z"
+    },
+    {
+      "id": "cam-002",
+      "name": "Backyard",
+      "location": "Back Yard",
+      "url": "rtsp://localhost:8554/cam-002",
+      "status": "online",
+      "resolution": "1280x720",
+      "fps": 15,
+      "detectionEnabled": true,
+      "sensitivity": "medium",
+      "zones": [
+        {
+          "id": "z1",
+          "name": "Patio",
+          "coordinates": [
+            [
+              0,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "type": "critical"
+        },
+        {
+          "id": "z2",
+          "name": "Garden",
+          "coordinates": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              1,
+              0.5
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0.5,
+              1
+            ]
+          ],
+          "type": "warning"
+        },
+        {
+          "id": "z3",
+          "name": "Fence Line",
+          "coordinates": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0.5
+            ],
+            [
+              0,
+              0.5
+            ]
+          ],
+          "type": "normal"
+        }
+      ],
+      "ownerId": "7ff8a244-8dde-41bf-beee-4e665565e0e2",
+      "createdAt": "2026-05-31T21:56:25.620Z"
+    },
+    {
+      "id": "cam-003",
+      "name": "Garage",
+      "location": "Garage Area",
+      "url": "rtsp://localhost:8554/cam-003",
+      "status": "online",
+      "resolution": "1280x720",
+      "fps": 15,
+      "detectionEnabled": true,
+      "sensitivity": "medium",
+      "zones": [
+        {
+          "id": "z1",
+          "name": "Garage Door",
+          "coordinates": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0.4
+            ],
+            [
+              0,
+              0.4
+            ]
+          ],
+          "type": "critical"
+        },
+        {
+          "id": "z2",
+          "name": "Interior",
+          "coordinates": [
+            [
+              0,
+              0.4
+            ],
+            [
+              1,
+              0.4
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "type": "warning"
+        }
+      ],
+      "ownerId": "7ff8a244-8dde-41bf-beee-4e665565e0e2",
+      "createdAt": "2026-05-31T21:56:25.620Z"
+    }
+  ],
+  "alerts": []
+}

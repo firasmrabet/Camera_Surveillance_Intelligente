@@ -1,0 +1,285 @@
+{
+  "cameras": {
+    "error": "Invalid or expired token"
+  },
+  "alerts": {
+    "error": "Invalid or expired token"
+  },
+  "debug": {
+    "users": [
+      {
+        "id": "a9091ad6-1c20-4656-ac8c-90980d01c8b7",
+        "email": "firasmrabet1603@gmail.com",
+        "password": "$2a$10$zX1y2/JhL8OoBGmgV4z2zedMi1PP7SAaZv8HjrD31t3991tX.50BK",
+        "name": "System Admin",
+        "phone": "+21695795197",
+        "role": "admin",
+        "createdAt": "2026-05-31T23:01:27.548Z"
+      }
+    ],
+    "cameras": [
+      {
+        "id": "cam-001",
+        "name": "Front Door",
+        "location": "Main Entrance",
+        "url": "rtsp://localhost:8554/cam-001",
+        "status": "online",
+        "resolution": "1280x720",
+        "fps": 15,
+        "detectionEnabled": true,
+        "sensitivity": "medium",
+        "zones": [
+          {
+            "id": "z1",
+            "name": "Entry Zone",
+            "coordinates": [
+              [
+                0,
+                0
+              ],
+              [
+                0.3,
+                0
+              ],
+              [
+                0.3,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "type": "critical"
+          },
+          {
+            "id": "z2",
+            "name": "Walkway",
+            "coordinates": [
+              [
+                0.3,
+                0
+              ],
+              [
+                0.7,
+                0
+              ],
+              [
+                0.7,
+                1
+              ],
+              [
+                0.3,
+                1
+              ]
+            ],
+            "type": "warning"
+          },
+          {
+            "id": "z3",
+            "name": "Perimeter",
+            "coordinates": [
+              [
+                0.7,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0.7,
+                1
+              ]
+            ],
+            "type": "normal"
+          }
+        ],
+        "ownerId": "a9091ad6-1c20-4656-ac8c-90980d01c8b7",
+        "createdAt": "2026-05-31T23:01:27.548Z"
+      },
+      {
+        "id": "cam-002",
+        "name": "Backyard",
+        "location": "Back Yard",
+        "url": "rtsp://localhost:8554/cam-002",
+        "status": "online",
+        "resolution": "1280x720",
+        "fps": 15,
+        "detectionEnabled": true,
+        "sensitivity": "medium",
+        "zones": [
+          {
+            "id": "z1",
+            "name": "Patio",
+            "coordinates": [
+              [
+                0,
+                0.5
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                0.5,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "type": "critical"
+          },
+          {
+            "id": "z2",
+            "name": "Garden",
+            "coordinates": [
+              [
+                0.5,
+                0.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0.5,
+                1
+              ]
+            ],
+            "type": "warning"
+          },
+          {
+            "id": "z3",
+            "name": "Fence Line",
+            "coordinates": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                0,
+                0.5
+              ]
+            ],
+            "type": "normal"
+          }
+        ],
+        "ownerId": "a9091ad6-1c20-4656-ac8c-90980d01c8b7",
+        "createdAt": "2026-05-31T23:01:27.548Z"
+      },
+      {
+        "id": "cam-003",
+        "name": "Garage",
+        "location": "Garage Area",
+        "url": "rtsp://localhost:8554/cam-003",
+        "status": "online",
+        "resolution": "1280x720",
+        "fps": 15,
+        "detectionEnabled": true,
+        "sensitivity": "medium",
+        "zones": [
+          {
+            "id": "z1",
+            "name": "Garage Door",
+            "coordinates": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.4
+              ],
+              [
+                0,
+                0.4
+              ]
+            ],
+            "type": "critical"
+          },
+          {
+            "id": "z2",
+            "name": "Interior",
+            "coordinates": [
+              [
+                0,
+                0.4
+              ],
+              [
+                1,
+                0.4
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "type": "warning"
+          }
+        ],
+        "ownerId": "a9091ad6-1c20-4656-ac8c-90980d01c8b7",
+        "createdAt": "2026-05-31T23:01:27.548Z"
+      }
+    ],
+    "alerts": [
+      {
+        "cameraId": "cam-001",
+        "ownerId": "a9091ad6-1c20-4656-ac8c-90980d01c8b7",
+        "type": "intrusion",
+        "severity": "critical",
+        "confidence": 0.9709249281235419,
+        "details": {
+          "type": "intrusion",
+          "confidence": 0.9709249281235419,
+          "timestamp": "2026-05-31T23:06:46.951Z",
+          "zone": "Entry Zone",
+          "severity": "critical"
+        },
+        "timestamp": "2026-05-31T23:06:46.952Z",
+        "id": "9b903f53-7cd6-419e-a51b-0a42960e3c7c",
+        "status": "active"
+      },
+      {
+        "cameraId": "cam-001",
+        "ownerId": "a9091ad6-1c20-4656-ac8c-90980d01c8b7",
+        "type": "manual",
+        "severity": "warning",
+        "confidence": 1,
+        "details": {
+          "message": "Integration test manual alert",
+          "manual": true
+        },
+        "timestamp": "2026-05-31T23:06:48.940Z",
+        "id": "93798844-0512-4d81-adf2-9bedccb289a2",
+        "status": "active"
+      }
+    ]
+  }
+}

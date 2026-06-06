@@ -1,0 +1,16 @@
+{
+  "name": "ai-camera-security-system",
+  "version": "1.0.0",
+  "description": "AI-powered home camera security system with real-time detection and alerts",
+  "private": true,
+  "scripts": {
+    "start:server": "cd server && node src/index.js",
+    "start:client": "cd client && npx react-scripts start",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "build:client": "cd client && npx react-scripts build"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

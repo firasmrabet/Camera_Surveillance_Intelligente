@@ -1,0 +1,68 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Logs and databases
+*.log
+*.err
+client.log
+server.err
+server.log
+server.err.log
+download.log
+download.err.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build directories
+client/build/
+server/public/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.sixth/
+
+# Large datasets and zip files
+datasets/
+UCF-Crime-Dataset/
+*.zip
+*.npy
+*.pt
+*.tflite
+*.task
+
+# Temporaries & Test outputs
+test_cam_id.txt
+test_pc_cam_id.txt
+test_pc_http_cam.txt
+test_token*.txt
+test_out.txt
+preview.jpg
+result.json
+input.json
+test_payload.json
+
+# If you want to push ai_models, comment this out, but they are > 100MB
+ai_models/
+sentinel_data/
+clips/
+data/db.json
+uploads/
