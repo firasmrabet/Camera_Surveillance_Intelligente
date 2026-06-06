@@ -60,6 +60,14 @@ result.json
 input.json
 test_payload.json
 
+# Large Binaries
+ffmpeg/
+bin/
+
+# Documents personnels
+*.pdf
+prompt_agent_*.md
+
 # If you want to push ai_models, comment this out, but they are > 100MB
 ai_models/
 sentinel_data/
