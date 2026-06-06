@@ -1,9 +1,14 @@
-# Node
+# ===========================
+# NODE.JS
+# ===========================
 node_modules/
 npm-debug.log
 yarn-error.log
+package-lock.json
 
-# Python
+# ===========================
+# PYTHON
+# ===========================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -12,65 +17,99 @@ env/
 venv/
 ENV/
 
-# Logs and databases
+# ===========================
+# LOGS
+# ===========================
 *.log
 *.err
-client.log
-server.err
-server.log
-server.err.log
-download.log
-download.err.log
+*.out
+*.done
+*.pid
+ai/logs/
 
-# Environment variables
+# ===========================
+# ENVIRONMENT & SECRETS
+# ===========================
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
 
-# Build directories
+# ===========================
+# BUILD & OUTPUT
+# ===========================
 client/build/
-server/public/
+server/public/hls/
 
-# IDE and OS files
+# ===========================
+# IDE & OS
+# ===========================
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 .sixth/
 
-# Large datasets and zip files
+# ===========================
+# DATASETS & LARGE MODELS (> 100MB)
+# ===========================
 datasets/
-UCF-Crime-Dataset/
+ai_models/
+sentinel_data/
 *.zip
 *.npy
 *.pt
 *.tflite
 *.task
 
-# Temporaries & Test outputs
-test_cam_id.txt
-test_pc_cam_id.txt
-test_pc_http_cam.txt
-test_token*.txt
-test_out.txt
-preview.jpg
-result.json
-input.json
-test_payload.json
-
-# Large Binaries
+# ===========================
+# LARGE BINARIES
+# ===========================
 ffmpeg/
 bin/
 
-# Documents personnels
+# ===========================
+# DOCUMENTS PERSONNELS
+# ===========================
 *.pdf
 prompt_agent_*.md
 
-# If you want to push ai_models, comment this out, but they are > 100MB
-ai_models/
-sentinel_data/
+# ===========================
+# TEST & DEBUG FILES
+# ===========================
+test_*.js
+test_*.py
+test_*.bat
+test_*.ps1
+test_*.txt
+test_*.json
+
+# ===========================
+# SCRIPTS UTILITAIRES (non production)
+# ===========================
+*.bat
+*.ps1
+server/scripts/
+server/query
+server/data/
+server/download_*
+server/extract_*
+server/fix_*
+server/get_token.js
+server/list_cams.js
+server/verify.js
+server/trigger_*
+ai/run_*.bat
+ai/start_*.ps1
+ai/watchdog.ps1
+ai/benchmark.py
+ai/download_*.py
+ai/verify_pipeline.py
+
+# ===========================
+# TEMPORARY & RUNTIME DATA
+# ===========================
 clips/
-data/db.json
 uploads/
+preview.jpg
+result.json
+input.json
+*.json.bak
